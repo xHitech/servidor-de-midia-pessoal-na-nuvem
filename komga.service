@@ -1,1 +1,16 @@
+[Unit]
+Description=Komga Media Server
+Wants=rclone-mount.service
+After=rclone-mount.service
 
+[Service]
+Type=simple
+User=hitech
+Group=hitech
+WorkingDirectory=/home/hitech/komga
+ExecStart=/usr/bin/java -jar /home/hitech/komga/komga-1.22.0.jar
+Restart=on-failure
+RestartSec=15
+
+[Install]
+WantedBy=default.target
