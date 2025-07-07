@@ -47,5 +47,7 @@ Exemplos dos arquivos de serviço do Systemd criados para este projeto.
 
 plexmediaserver.service (gerado automaticamente pela instalação do Plex)
 
-6. Resultado Final
+6. Resultado Final!
+[Screenshot 2025-07-07 185531](https://github.com/user-attachments/assets/40bbf9e1-d90a-44ba-bf19-6e7ab0eea142)
+
 O resultado é um servidor de mídia estável, silencioso, de baixo consumo (fora de casa), acessível de qualquer lugar e totalmente autônomo, com os serviços iniciando automaticamente na ordem correta e se recuperando de falhas.
