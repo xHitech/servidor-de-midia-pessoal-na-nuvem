@@ -5,33 +5,25 @@ Documentação do projeto de criação de um servidor de mídia pessoal 100% na 
 A motivação inicial para este projeto foi resolver uma série de problemas práticos. Eu precisava de acesso constante (24/7) à minha biblioteca de mídia de 2TB no Google Drive, sem depender de um PC gamer para isso. Manter o computador principal ligado o tempo todo gerava ruído indesejado, tinha um alto consumo de energia e, o mais crítico, deixava meu hardware caro vulnerável à instável rede elétrica da minha cidade.
 
 2. A Arquitetura da Solução
+
 A solução escolhida foi uma arquitetura 100% na nuvem, composta por:
-
 Infraestrutura: Um VPS (Servidor Virtual Privado) rodando Ubuntu Server.
-
 Armazenamento: Rclone, configurado para "montar" o Google Drive como um sistema de arquivos local no servidor, servindo como uma ponte de acesso aos dados sem ocupar espaço em disco local.
 
 Aplicações:
 
 Komga: Um servidor de mídia open-source especializado para quadrinhos e mangás.
-
 Plex: Uma das plataformas de servidor de mídia mais populares do mundo, utilizada aqui com foco no streaming de uma biblioteca de áudio em formato FLAC.
-
 Automação: Systemd, o gerenciador de sistemas do Linux, para garantir que todos os serviços (Rclone, Komga, Plex) iniciem automaticamente com o sistema e se recuperem de falhas.
 
 3. Tecnologias Utilizadas
+
 Cloud: VPS (IaaS)
-
 OS: Ubuntu Server 20.04 LTS
-
 Core: Rclone, FUSE3
-
 API: Google Drive API, OAuth 2.0
-
 Serviços: Komga (Java), Plex Media Server
-
 Automação: Systemd
-
 Firewall: UFW
 
 4. Guia de Configuração e Desafios
